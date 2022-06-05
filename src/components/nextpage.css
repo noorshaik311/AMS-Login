@@ -1,0 +1,104 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    word-break: break-all;
+  }
+  .h1{
+    margin-left: -17%;
+    color: rgba(68, 2, 2, 0.938) ;
+    font-size: 20px;
+  }
+  .bloc-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+  }
+  .tabs {
+    padding: 15px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 13px;
+    margin-left: 5px;
+    width: 115px;
+    text-align: center;
+    background: rgba(128, 128, 128, 0.075);
+    cursor: pointer;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.274); */
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    /* border: 1px solid rgba(0, 0, 0, 0.274);  */
+  }
+  .active-tabs  {
+    background-color: rgb(221, 227, 230);
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+  button {
+    border: none;
+    height: 3vh;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 2px;
+    color: white;
+    line-height: 15px;
+    text-underline-offset: 12px;
+  }
+  .content-tabs {
+    flex-grow : 1;
+  }
+  .content {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .active-content {
+    display: flex;
+    border: none;
+  }
+  .link{
+      width: 97vw;
+      height: 90vh;
+  }
+ 
+  .tabs:hover{
+    transform: scale(107%);
+    box-shadow: rgb(0, 0, 0) 0px 1px 5px;
+  }
+
+  .logout{
+    width: auto;
+    height: auto;
+    margin-top: 4px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 2px;
+    right: 20px;
+    font-weight:bold;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 0px rgb(12, 12, 11);
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  
